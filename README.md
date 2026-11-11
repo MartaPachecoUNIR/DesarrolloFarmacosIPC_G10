@@ -58,6 +58,16 @@ El análisis del bruto del RNAseq se compone de 3 ficheros.
 
 ### 2. AlphaFold 
 
+Esta carpeta contiene los scripts destinados al análisis computacional de proteínas mediante AlphaFold. Su finalidad es estudiar la estructura tridimensional de las proteínas y evaluar la fiabilidad de las predicciones estructurales, proporcionando información relevante para las etapas posteriores del descubrimiento y desarrollo de fármacos.
+
+Por un lado, el fichero `simulacion_estructural.py` tiene como objetivo realizar el análisis de la estructura tridimensional de la proteína obtenida mediante AlphaFold. Permite estudiar su conformación espacial, identificar sus principales regiones estructurales y visualizar la disposición de sus aminoácidos. 
+
+Este análisis proporciona información sobre la organización molecular de la proteína y permite identificar posibles regiones de interés para el estudio de interacciones con moléculas candidatas a fármacos.
+
+Por otro lado, el fichero `prediccion_fiabilidad.py` tiene como objetivo evaluar la fiabilidad de la estructura tridimensional predicha mediante AlphaFold, a través del análisis de los principales indicadores de confianza: pLDDT (Predicted Local Distance Difference Test), PAE (Predicted Aligned Error), pTM (Predicted Template Modeling score) e ipTM (Interface Predicted Template Modeling score).
+
+Estos parámetros permiten determinar el grado de confianza de la predicción a nivel local y global, identificar regiones estructuralmente inciertas y evaluar la confianza en las interfaces de interacción entre proteínas cuando se estudian complejos proteicos.
+
 ### 3.
 
 ### 4. 

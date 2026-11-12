@@ -101,10 +101,23 @@ Este programa creará finalmente un archivo llamado 'final_candidates.csv' en la
 
 ## Interpretación biológica
 
+Desde un punto de vista biológico, este proyecto plantea una estrategia integrada de descubrimiento de nuevos candidatos terapéuticos frente a una patología, partiendo de la identificación de posibles dianas moleculares hasta la selección de compuestos con potencial farmacológico.
+
+En primer lugar, el análisis de RNA-seq permite identificar genes y transcritos que presentan alteraciones en sus niveles de expresión respecto a las condiciones de referencia. Estas diferencias pueden estar relacionadas con los mecanismos moleculares implicados en el desarrollo de la patología y permiten seleccionar proteínas potencialmente relevantes como dianas terapéuticas.
+
+Posteriormente, mediante AlphaFold se predice la estructura tridimensional de las proteínas seleccionadas, lo que permite estudiar su organización espacial, identificar regiones funcionales y valorar la fiabilidad de los modelos estructurales. La incorporación de herramientas de IA generativa permite explorar posibles cambios conformacionales y mejorar los modelos estructurales disponibles, teniendo en cuenta la flexibilidad natural de las proteínas.
+
+Una vez definidas las estructuras de las posibles dianas, el cribado virtual y el docking molecular permiten estudiar las interacciones entre estas proteínas y diferentes moléculas candidatas, identificando aquellas que presentan una mayor compatibilidad estructural y una afinidad de unión teórica favorable.
+
+Finalmente, el análisis ADMET permite evaluar las propiedades farmacocinéticas y toxicológicas de los compuestos seleccionados, estimando su absorción, distribución, metabolismo, excreción y posibles efectos tóxicos.
+
+En conjunto, el proyecto integra análisis transcriptómico, modelado estructural, inteligencia artificial generativa, simulación molecular y aprendizaje automático para establecer un flujo de trabajo computacional orientado a identificar y priorizar moléculas con potencial terapéutico.
 
 ---
 
 ## Limitaciones y consideraciones
+
+A pesar de que las herramientas computacionales empleadas permiten identificar y priorizar posibles dianas terapéuticas y moléculas candidatas de forma eficiente, es importante tener en cuenta que todos los resultados obtenidos mediante este proyecto son predicciones in silico y, por tanto, presentan ciertas limitaciones. Los resultados obtenidos deben interpretarse como una herramienta de priorización y generación de hipótesis que requiere posteriores procesos de validación biológica y farmacológica, incluyendo ensayos in vitro, estudios celulares y, cuando proceda, modelos in vivo, para confirmar la relevancia de las dianas seleccionadas, la actividad terapéutica de los compuestos y su seguridad antes de considerar cualquier posible aplicación clínica.
 
 ## Licencia
 

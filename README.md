@@ -68,7 +68,14 @@ Por otro lado, el fichero `prediccion_fiabilidad.py` tiene como objetivo evaluar
 
 Estos parámetros permiten determinar el grado de confianza de la predicción a nivel local y global, identificar regiones estructuralmente inciertas y evaluar la confianza en las interfaces de interacción entre proteínas cuando se estudian complejos proteicos.
 
-### 3.
+### 3. Optimización estructural mediante IA generativa
+
+El objetivo principal de utilizar AlphaFold es predecir la estructura tridimensional de las proteínas seleccionadas como posibles dianas terapéuticas a partir de sus secuencias de aminoácidos. La carpeta alphafold/ se organiza en dos subcarpetas principales y un fichero independiente, cada uno destinado a almacenar una parte específica de la información necesaria para el análisis de las proteínas seleccionadas mediante AlphaFold.
+
+El análisis mediante inteligencia artificial generativa se compone de 3 ficheros.
+- El primero, llamado `structural_analysis.py` se encargaría de evaluar los modelos tridimensionales obtenidos mediante AlphaFold, identificando posibles regiones de baja confianza o imperfecciones estructurales.
+- El segundo, llamado `conformational_generation.py` se encargaría de utilizar modelos de inteligencia artificial generativa para obtener conformaciones alternativas de las proteínas diana, explorando así su posible flexibilidad estructural.
+- El tercero, llamado `validation_selection.py`, se encargaría de evaluar la calidad estructural de los modelos generados, comprobando su compatibilidad con la secuencia aminoacídica original y seleccionando aquellos más adecuados para su utilización en el posterior cribado virtual.
 
 ### 4. 
 

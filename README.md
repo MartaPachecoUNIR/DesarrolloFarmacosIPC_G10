@@ -72,11 +72,23 @@ Estos parámetros permiten determinar el grado de confianza de la predicción a 
 
 ### 4. 
 
-### 5.
+### 5. Análisis LADMET
+
+Este módulo tiene como objetivo clasificar y priorizar las moléculas candidatas procedentes del módulo anterior según su perfil LADMET (Liberación, Absorción, Distribución, Metabolismo, Excreción y Toxicidad). 
+
+Para ello, utilizará como datos de entrada los identificadores SMILES de los compuestos seleccionados y llevará a cabo las siguientes funciones:
+
+  1. Cálculo de descriptores moleculares mediante 'molecular_descriptors.py', que permitirá obtener las principales propiedades fisicoquímicas de cada molécula (MW, LogP, TPSA, HBD, HBA)
+  2. Entrenamiento y evaluación de un modelo de Machine Learning capaz de predecir las propiedades LADMET con 'model_training.py'
+  3. Predicción de las propiedades LADME (Liberación, Absorción, Distribución, Metabolismo y Excreción) con 'ladme_prediction.py'
+  4. Predicción de toxicidad con 'toxicity_prediction.py'
+  5. Evaluación y clasificación final de los candidatos con 'ladmet_scoring.py'
 
 ---
 
 ## Salidas(outputs)
+
+Este programa creará finalmente un archivo llamado 'final_candidates.csv' en la ruta indicada. Este archivo contendrá un ranking de los candidatos seleccionados según sus propiedades fisicoquímicas y farmacocinéticas que podrá ser utilizado para futuras fases de investigación en el desarrollo de fármacos. 
 
 ---
 

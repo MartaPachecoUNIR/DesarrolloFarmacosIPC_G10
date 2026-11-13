@@ -86,16 +86,18 @@ Este módulo tiene como objetivo clasificar y priorizar las moléculas candidata
 Para ello, utilizará como datos de entrada los identificadores SMILES de los compuestos seleccionados y llevará a cabo las siguientes funciones:
 
   1. Cálculo de descriptores moleculares mediante 'molecular_descriptors.py', que permitirá obtener las principales propiedades fisicoquímicas de cada molécula (MW, LogP, TPSA, HBD, HBA)
-  2. Entrenamiento y evaluación de un modelo de Machine Learning capaz de predecir las propiedades LADMET con 'model_training.py'
-  3. Predicción de las propiedades LADME (Liberación, Absorción, Distribución, Metabolismo y Excreción) con 'ladme_prediction.py'
-  4. Predicción de toxicidad con 'toxicity_prediction.py'
-  5. Evaluación y clasificación final de los candidatos con 'ladmet_scoring.py'
+  2. Entrenamiento y evaluación de un modelo de Machine Learning mediante 'model_training.py', utilizando datos de referencia para desarrollar un modelo predictivo de las propiedades LADMET 
+  3. Predicción de las propiedades LADME (Liberación, Absorción, Distribución, Metabolismo y Excreción) mediante 'ladme_prediction.py'
+  4. Predicción de toxicidad mediante 'toxicity_prediction.py'
+  5. Evaluación y clasificación final de los candidatos mediante 'ladmet_scoring.py', combinando los resultados obtenidos para establecer un ranking de prioridad según su perfil LADMET
 
 ---
 
 ## Salidas(outputs)
 
-Este programa creará finalmente un archivo llamado 'final_candidates.csv' en la ruta indicada. Este archivo contendrá un ranking de los candidatos seleccionados según sus propiedades fisicoquímicas y farmacocinéticas que podrá ser utilizado para futuras fases de investigación en el desarrollo de fármacos. 
+Este programa creará finalmente un archivo llamado 'final_candidates.csv' en la ruta especificada por el usuario. Este archivo contendrá los resultados de las predicciones LADMET de cada compuesto, incluyendo sus propiedades fisicoquímicas, farmacocinéticas y toxicológicas, así como una puntuación global que permitirá establecer un ranking de los candidatos más prometedores.
+
+Los compuestos priorizados podrán seleccionarse para futuras fases de investigación en el desarrollo de fármacos. 
 
 ---
 
@@ -109,7 +111,7 @@ Posteriormente, mediante AlphaFold se predice la estructura tridimensional de la
 
 Una vez definidas las estructuras de las posibles dianas, el cribado virtual y el docking molecular permiten estudiar las interacciones entre estas proteínas y diferentes moléculas candidatas, identificando aquellas que presentan una mayor compatibilidad estructural y una afinidad de unión teórica favorable.
 
-Finalmente, el análisis ADMET permite evaluar las propiedades farmacocinéticas y toxicológicas de los compuestos seleccionados, estimando su absorción, distribución, metabolismo, excreción y posibles efectos tóxicos.
+Finalmente, el análisis LADMET permite evaluar las propiedades farmacocinéticas y toxicológicas de los compuestos seleccionados, estimando su liberación, absorción, distribución, metabolismo, excreción y posibles efectos tóxicos.
 
 En conjunto, el proyecto integra análisis transcriptómico, modelado estructural, inteligencia artificial generativa, simulación molecular y aprendizaje automático para establecer un flujo de trabajo computacional orientado a identificar y priorizar moléculas con potencial terapéutico.
 

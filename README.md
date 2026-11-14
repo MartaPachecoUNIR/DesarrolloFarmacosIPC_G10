@@ -24,7 +24,7 @@ El programa ayudaría a los investigadores a diseñar fármacos frente a diversa
 - [Guía de instalación](#Guía-de-instalación)
 - [Workflow](#Workflow)
 - [Funcionamiento interno](#Funcionamiento-interno)
-- [Entradas/Salidas](#Entradas/Salidas)
+- [Entradas y Salidas](#Entradas-y-Salidas)
 - [Interpretación biológica](#Interpretación-biológica)
 - [Limitaciones y consideraciones](#Limitaciones-y-consideraciones)
 - [Licencia](#Licencia)
@@ -95,7 +95,7 @@ Para ello, utilizará como datos de entrada los identificadores SMILES de los co
 
 ---
 
-## Entradas/Salidas
+## Entradas y Salidas
 
 ### Entradas
 

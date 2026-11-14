@@ -51,10 +51,12 @@ Una vez hecho lo anterior, el usuario tan solo deberá ejecutar el fichero main.
 
 ### 1. Análisis de RNAseq
 
+El programa partiría de un análisis de los resultados brutos de un RNAseq, de manera que podrían seleccionarse los principales candidatos a diana para el diseño de posibles los fármacos que pudieran permitir tratar la enfermedad.
+
 El análisis del bruto del RNAseq se compone de 3 ficheros.
-  -  El primero, llamado `calidad_y_filtrado.py` se encargaría de comprobar la calidad de cada uno de los transcritos secuenciados, así como del filtrado y la eliminación de aquellos que no lleguen a los requisitos previstos
-  -  El segundo, llamado `alineamiento.py` se encargaría del alineamiento de los transcritos con el genoma de referencia, para así poder identificarlos
-  -  El tercero, llamado `cuantificación_y_selección.py` se encargaría de cuantificar los distintos transcritos y, a partir de la expresión diferencial respecto a sus referencias, la selección de aquellos más llamativos como posibles dianas en el diseño de fármacos frente a la patología
+  -  El primero, llamado `calidad_y_filtrado.py` se encargaría de comprobar los distintos parámetros de calidad de cada uno de las lecturas de los transcritos secuenciados. De esta manera, el programa podría pasar al filtrado y la eliminación de aquellas lecturas, o fragmentos de estas, que no lleguen a los requisitos mínimos previstos, así como la eliminación de adaptadores y demás elementos ajenos a las propias secuencias, mejorando la calidad del secuenciado.
+  -  El segundo, llamado `alineamiento.py` se encargaría del alineamiento de las lecturas con el genoma de referencia, reconstruyendo los distintos transcritos y, con gran probabilidad, permitiendo su identificación.
+  -  El tercero, llamado `cuantificación_y_selección.py` se encargaría de cuantificar los distintos transcritos. Esto permitiría el cálculo de la expresión diferencial de los transcritos respecto a sus referencias en célula sana, pudiéndose seleccionar aquellos con las variaciones más significativas como posibles dianas para los posteriores análisis.
 
 ### 2. AlphaFold 
 

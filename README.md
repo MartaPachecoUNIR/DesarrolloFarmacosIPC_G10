@@ -85,7 +85,7 @@ El proceso de acoplamiento molecular y cribado virtual se compone de 4 ficheros,
 - El primero, llamado `1_preparacion_proteina.py` se encargaría de la adecuación de la estructura tridimensional de la diana, añadiendo hidrógenos y eliminando moléculas de H2O o ligandos.
 - El segundo, llamado `2_optimizacion _ligando.py` se encargaría de ajustar el estado de ionización del ligando a pH fisiológico , añadiendo hidrógenos y minimizando su energía para lograr una conformación estable.
 - El tercero, llamado, `3_docking_molecular.py` se encargaría de ejecutar el acoplamiento molecular en el sitio de unión y evaluar la afinidad teórica y la precisión geométrica de las poses.
-- El cuarto, llamado `4_cribado_virtual.py` se encargaría del cribado masivo de quimiotecas frente a la diana preparada para seleccionar a las mejores moléculas candidatas.
+- El cuarto, llamado `4_cribado.py` se encargaría del cribado masivo de quimiotecas frente a la diana preparada para seleccionar a las mejores moléculas candidatas.
 
 ### 5. Análisis LADMET
 

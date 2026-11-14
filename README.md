@@ -93,11 +93,11 @@ Este módulo tiene como objetivo clasificar y priorizar las moléculas candidata
 
 Para ello, utilizará como datos de entrada los identificadores SMILES de los compuestos seleccionados y llevará a cabo las siguientes funciones:
 
-  1. Cálculo de descriptores moleculares mediante `molecular_descriptors.py`, que permitirá obtener las principales propiedades fisicoquímicas de cada molécula (MW, LogP, TPSA, HBD, HBA)
-  2. Entrenamiento y evaluación de un modelo de Machine Learning mediante `model_training.py`, utilizando datos de referencia para desarrollar un modelo predictivo de las propiedades LADMET 
-  3. Predicción de las propiedades LADME (Liberación, Absorción, Distribución, Metabolismo y Excreción) mediante `ladme_prediction.py`
-  4. Predicción de toxicidad mediante `toxicity_prediction.py`
-  5. Evaluación y clasificación final de los candidatos mediante `ladmet_scoring.py`, combinando los resultados obtenidos para establecer un ranking de prioridad según su perfil LADMET
+  1. Cálculo de descriptores moleculares mediante `descriptores_moleculares.py`, que permitirá obtener las principales propiedades fisicoquímicas de cada molécula (MW, LogP, TPSA, HBD, HBA)
+  2. Entrenamiento y evaluación de un modelo de Machine Learning mediante `modelo_entrenamiento.py`, utilizando datos de referencia para desarrollar un modelo predictivo de las propiedades LADMET 
+  3. Predicción de las propiedades LADME (Liberación, Absorción, Distribución, Metabolismo y Excreción) mediante `ladme_prediccion.py`
+  4. Predicción de toxicidad mediante `toxicidad_prediccion.py`
+  5. Evaluación y clasificación final de los candidatos mediante `ladmet_puntuacion.py`, combinando los resultados obtenidos para establecer un ranking de prioridad según su perfil LADMET
 
 ---
 
@@ -109,7 +109,7 @@ El programa abriría una ventana en la que el usuario podría señalar el direct
 
 ### Salidas
 
-Este programa creará finalmente un archivo llamado 'final_candidates(n).csv' dentro de una carpeta de resultados en la ruta especificada por el usuario (de no existir previemente la carpeta de resultados en dicha ruta, el programa la crearía). Este archivo contendrá los resultados de las predicciones LADMET de cada compuesto, incluyendo sus propiedades fisicoquímicas, farmacocinéticas y toxicológicas, así como una puntuación global que permitirá establecer un ranking de los candidatos más prometedores.
+Este programa creará finalmente un archivo llamado 'final_candidatos(n).csv' dentro de una carpeta de resultados en la ruta especificada por el usuario (de no existir previemente la carpeta de resultados en dicha ruta, el programa la crearía). Este archivo contendrá los resultados de las predicciones LADMET de cada compuesto, incluyendo sus propiedades fisicoquímicas, farmacocinéticas y toxicológicas, así como una puntuación global que permitirá establecer un ranking de los candidatos más prometedores.
 
 Los compuestos priorizados podrán seleccionarse para futuras fases de investigación en el desarrollo de fármacos. 
 

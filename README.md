@@ -81,9 +81,9 @@ Estos parámetros permiten determinar el grado de confianza de la predicción a 
 El objetivo principal de utilizar AlphaFold es predecir la estructura tridimensional de las proteínas seleccionadas como posibles dianas terapéuticas a partir de sus secuencias de aminoácidos. La carpeta alphafold/ se organiza en dos subcarpetas principales y un fichero independiente, cada uno destinado a almacenar una parte específica de la información necesaria para el análisis de las proteínas seleccionadas mediante AlphaFold.
 
 El análisis mediante inteligencia artificial generativa se compone de 3 ficheros.
-- El primero, llamado `structural_analysis.py` se encargaría de evaluar los modelos tridimensionales obtenidos mediante AlphaFold, identificando posibles regiones de baja confianza o imperfecciones estructurales.
-- El segundo, llamado `conformational_generation.py` se encargaría de utilizar modelos de inteligencia artificial generativa para obtener conformaciones alternativas de las proteínas diana, explorando así su posible flexibilidad estructural.
-- El tercero, llamado `validation_selection.py`, se encargaría de evaluar la calidad estructural de los modelos generados, comprobando su compatibilidad con la secuencia aminoacídica original y seleccionando aquellos más adecuados para su utilización en el posterior cribado virtual.
+- El primero, llamado `analisis_estructural.py` se encargaría de evaluar los modelos tridimensionales obtenidos mediante AlphaFold, identificando posibles regiones de baja confianza o imperfecciones estructurales.
+- El segundo, llamado `generacion_conformacional.py` se encargaría de utilizar modelos de inteligencia artificial generativa para obtener conformaciones alternativas de las proteínas diana, explorando así su posible flexibilidad estructural.
+- El tercero, llamado `validacion_seleccion.py`, se encargaría de evaluar la calidad estructural de los modelos generados, comprobando su compatibilidad con la secuencia aminoacídica original y seleccionando aquellos más adecuados para su utilización en el posterior cribado virtual.
 
 ### 4. Cribado Virtual y Docking Molecular
 El proceso de acoplamiento molecular y cribado virtual se compone de 4 ficheros, estos se encuentran en el directorio cribado_y_docking.

@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="graphical_abstract.png"
+       alt="Graphical abstract del pipeline DesarrolloFarmacos_G10"
+       width="100%">
+</p>
+
 # DesarrolloFarmacos_G10
 
 ## Autoría: 

@@ -24,7 +24,7 @@ El programa ayudaría a los investigadores a diseñar fármacos frente a diversa
 - [Guía de instalación](#Guía-de-instalación)
 - [Workflow](#Workflow)
 - [Funcionamiento interno](#Funcionamiento-interno)
-- [Salidas(outputs)](#Salidas(outputs))
+- [Entradas/Salidas](#Entradas/Salidas)
 - [Interpretación biológica](#Interpretación-biológica)
 - [Limitaciones y consideraciones](#Limitaciones-y-consideraciones)
 - [Licencia](#Licencia)
@@ -95,9 +95,15 @@ Para ello, utilizará como datos de entrada los identificadores SMILES de los co
 
 ---
 
-## Salidas(outputs)
+## Entradas/Salidas
 
-Este programa creará finalmente un archivo llamado 'final_candidates.csv' en la ruta especificada por el usuario. Este archivo contendrá los resultados de las predicciones LADMET de cada compuesto, incluyendo sus propiedades fisicoquímicas, farmacocinéticas y toxicológicas, así como una puntuación global que permitirá establecer un ranking de los candidatos más prometedores.
+### Entradas
+
+El programa abriría una ventana en la que el usuario podría señalar el directorio donde se encuentre el input del RNAseq que desea analizar. O bien podrá introducir directamente la ruta en la que se encuentra dicho directorio en el correspondiente lugar del fichero `main`.
+
+### Salidas
+
+Este programa creará finalmente un archivo llamado 'final_candidates(n).csv' dentro de una carpeta de resultados en la ruta especificada por el usuario (de no existir previemente la carpeta de resultados en dicha ruta, el programa la crearía). Este archivo contendrá los resultados de las predicciones LADMET de cada compuesto, incluyendo sus propiedades fisicoquímicas, farmacocinéticas y toxicológicas, así como una puntuación global que permitirá establecer un ranking de los candidatos más prometedores.
 
 Los compuestos priorizados podrán seleccionarse para futuras fases de investigación en el desarrollo de fármacos. 
 
